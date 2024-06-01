@@ -1,0 +1,88 @@
+.AppLogo{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1rem;
+    color: teal;
+}
+
+.PluginSearch{
+    width: 50%;
+    border: 1px solid #cdcdcd20;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding: 1%;
+}
+
+.SideDiv{
+    background: transparent;
+    width: 20%;
+    overflow-y: auto;
+    border-right: 1px solid #cdcdcd20 ;
+}
+
+.MainDiv{
+    background: transparent;
+    width: 76%;
+    height: 95%;
+    margin: 1% ;
+    left: auto;
+    right: 0;
+    border-radius: 20px;
+    border: 1px solid #cdcdcd20;
+    overflow-y: auto;
+}
+
+.AppImage{
+    width: 30%;
+    margin: 1% 40%;
+}
+
+.Sections{
+    position: relative;
+    width: 95%;
+    height: 50px;
+    display: inline-flex;
+    border-radius: 10px;
+    left: 2%;
+}
+
+.Shorts{
+    width: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background: forestgreen;
+}
+
+@media screen and (max-width:800px) {
+    .PluginSearch{
+        width: 30%;
+        border: 1px solid #cdcdcd20;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        padding: 1%;
+    }
+    .Sections{
+        position: relative;
+        width: 95%;
+        height: auto;
+        display: block;
+        border-radius: 10px;
+        left: 2%;
+    }
+    
+    .Shorts{
+        width: 95%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        height: 30px;
+        margin-left: 0;
+        margin-right: auto;
+        background: forestgreen;
+    }
+
+}
