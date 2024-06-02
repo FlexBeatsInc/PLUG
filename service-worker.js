@@ -5,8 +5,6 @@ const urlsToCache = [
   '/',
 ];
 
-let deferredPrompt;
-
 // Install the service worker
 self.addEventListener('install', function(event) {
   event.waitUntil(
@@ -38,30 +36,32 @@ self.addEventListener('fetch', function(event) {
   event.respondWith(
     caches.match(event.request)
       .then(function(response) {
-        // Cache hit - return response
+        // If cached content is available, return it
         if (response) {
           return response;
         }
 
-        // Clone the request to make a fetch
-        let fetchRequest = event.request.clone();
-
-        return fetch(fetchRequest)
-          .then(function(response) {
-            // Check if we received a valid response
-            if (!response || response.status !== 200 || response.type !== 'basic') {
-              return response;
+        // If not, fetch the requested resource from the network
+        return fetch(event.request)
+          .then(function(networkResponse) {
+            // Check if the fetch was successful
+            if (!networkResponse || networkResponse.status !== 200 || networkResponse.type !== 'basic') {
+              return networkResponse;
             }
 
             // Clone the response to put in the cache
-            let responseToCache = response.clone();
+            let responseToCache = networkResponse.clone();
 
             caches.open(CACHE_NAME)
               .then(function(cache) {
                 cache.put(event.request, responseToCache);
               });
 
-            return response;
+            return networkResponse;
+          })
+          .catch(function() {
+            // If fetching fails, return a cached response if available
+            return caches.match(event.request);
           });
       })
   );
@@ -102,24 +102,3 @@ function showInstallPromotion() {
   // Add the install button to the page
   document.body.appendChild(installButton);
 }
-
-// Push notification event listener
-self.addEventListener('push', function(event) {
-  const options = {
-    body: event.data.text(),
-    icon: '/Components/Library/Images/app_icon.png',
-    badge: '/Components/Library/Images/app_icon.png',
-    // You can add more options here as needed
-  };
-
-  event.waitUntil(
-    self.registration.showNotification('Push Notification Title', options)
-  );
-});
-
-// Notification click event listener
-self.addEventListener('notificationclick', function(event) {
-  event.notification.close();
-  // Add your custom handling logic here, for example, opening a new window
-  clients.openWindow('https://flexbeatsinc.github.io/PLUG/App/index.html');
-});

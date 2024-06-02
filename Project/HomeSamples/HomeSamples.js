@@ -2,7 +2,7 @@ export const HOMESAMPLES=()=>{
 
     const HOMEDIV=document.querySelector('.MainDiv');
 
-    GETINDEXED('PLUG','Plugins',(data)=>{
+    GETINDEXED('PLUGSAMPLES','Samples',(data)=>{
 
         CLEAR(HOMEDIV);
         

@@ -2,7 +2,7 @@ export const HOMEDAWS=()=>{
 
     const HOMEDIV=document.querySelector('.MainDiv');
 
-    GETINDEXED('PLUG','Plugins',(data)=>{
+    GETINDEXED('PLUGDAWS','Daws',(data)=>{
 
         CLEAR(HOMEDIV);
         

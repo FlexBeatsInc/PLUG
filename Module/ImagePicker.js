@@ -3,6 +3,12 @@ export const IMAGEPICKER = (ELEMENT, ELEMENT1, callback) => { document.querySele
 //PLUGINS API
 export const PLUGINSAPI='https://script.google.com/macros/s/AKfycbzIuCfv7Y66ZQyYrbV8OzZ44pyIO2rQ7rjwQ1X1An-bv7anQnkdNM3vjdcRh8uBz9Kf0g/exec';
 
+//DAWS API
+export const DAWSAPI='https://script.googleusercontent.com/macros/echo?user_content_key=AbQNVLe3Zshu3TdofV6uWdEDuhJQ468A_sFokqaJAjrruG_LjV4L13vSrt5O4DV2fMZ1ie8gtzsL3ZrJ7IpV5-LOJQcMnEVjm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnHnyJhCSiPSvb3KSCRfreXk-CMVBMzt9a9otuGFS48VpujknbTEVmzrWB4mjRDNji-KvJ0sJ1iRHVHuzw7HPRpYA8Hz3n9n2Bg&lib=MuLaCU3_6rOFSAM5EUEIV9iP94nk-hx4l';
+
+//SAMPLES API
+export const SAMPLESAPI='https://script.googleusercontent.com/macros/echo?user_content_key=Y8IQ7GvT3tjaQ9utuUiaomK4MhU-08_gRMdc_XdgBQEkSCOGoakDqermV58b4Y6zM0CDTSJbxe6E1CRvLy8akSIQPe5sSDfmm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnDZnx7PiChuFo31e5efVPFmWyi71GHxvpcQx5btNefAdFiA3snoiUBEq1Lm_LgpQU7SIZVcuFiGol8Glfer96AILLno7UnJhjA&lib=MXF3HU9rZjTKMHehrua-hayP94nk-hx4l';
+
 //USERS
 export const USERSAPI='https://script.googleusercontent.com/macros/echo?user_content_key=wC8e7VP-F-xo2rUUAEofxn-1lF9JeTkwh8kDdfK06G5Exml-NIdNGYMkba8UFcOqa5sQ9DbwV4_26hrCPWWVezgmRllvUc3Mm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnGL0896T1r6XAScszh4jUUM5lkFr8wOLJh3m6O1FdBYuMh33I_73WAzk5RqZn8OiIki7zzMBerkPbNh0JhEe-OfYqSHi8qaqhw&lib=MrJxf_1DPoJtyr7NFbJYboCP94nk-hx4l';
 export const CREATEUSERAPI='https://script.google.com/macros/s/AKfycbyv2S1w-i_M6Jzw8vsjn_80n-N_77WIBeYETUYgyh-6WpdJzTWbvLmwEtX0Qw8w6_Wc/exec';
