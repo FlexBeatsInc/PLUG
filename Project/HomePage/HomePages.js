@@ -51,8 +51,7 @@ export const HOMEPAGES=()=>{
                 <p>&copy; Plug Inc 2024 Distrubtion</p>
         
             `
-        )
-
+        );
 
     })
     

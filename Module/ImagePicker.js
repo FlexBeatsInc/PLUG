@@ -2,3 +2,9 @@ export const IMAGEPICKER = (ELEMENT, ELEMENT1, callback) => { document.querySele
 
 //PLUGINS API
 export const PLUGINSAPI='https://script.google.com/macros/s/AKfycbzIuCfv7Y66ZQyYrbV8OzZ44pyIO2rQ7rjwQ1X1An-bv7anQnkdNM3vjdcRh8uBz9Kf0g/exec';
+
+//USERS
+export const USERSAPI='https://script.googleusercontent.com/macros/echo?user_content_key=wC8e7VP-F-xo2rUUAEofxn-1lF9JeTkwh8kDdfK06G5Exml-NIdNGYMkba8UFcOqa5sQ9DbwV4_26hrCPWWVezgmRllvUc3Mm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnGL0896T1r6XAScszh4jUUM5lkFr8wOLJh3m6O1FdBYuMh33I_73WAzk5RqZn8OiIki7zzMBerkPbNh0JhEe-OfYqSHi8qaqhw&lib=MrJxf_1DPoJtyr7NFbJYboCP94nk-hx4l';
+export const CREATEUSERAPI='https://script.google.com/macros/s/AKfycbyv2S1w-i_M6Jzw8vsjn_80n-N_77WIBeYETUYgyh-6WpdJzTWbvLmwEtX0Qw8w6_Wc/exec';
+export const UPDATEUSERAPI='https://script.google.com/macros/s/AKfycbw_lZHS14bD8qk8PyWqf5gW4DHGLLooSeSbaH3Qy3jth3xiMeD_htt8N4eqtTL1aMd-/exec';
+export const EMAILAPI='https://script.google.com/macros/s/AKfycbyOntAwDPdE8RgUgLYmL55_qRBh6Tlb_7Cqx214HnUCpSa6Kl8j2u5ZlXTYuUZkqtI/exec';

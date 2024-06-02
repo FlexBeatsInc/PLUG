@@ -1,3 +1,6 @@
 @import url('../Project/HomePage/HomePage.css');
 @import url('../Project/HomeSideDiv/HomeSideDiv.css');
 @import url('../Project/HomePlugins/HomePlugins.css');
+@import url('../Project/UserAccountPage/Login/LoginAccount.css');
+@import url('../Project/UserAccountPage/CreateAccount/CreateAccount.css');
+@import url('../Project/UserAccountPage/MyAccountPage/MyAccountPage.css');
