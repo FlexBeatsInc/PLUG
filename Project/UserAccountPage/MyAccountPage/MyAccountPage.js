@@ -22,15 +22,6 @@ export const MYACCOUNTPAGE=()=>{
 
                     <p class='Verify'><p>
 
-                    <div class='OptinHolder'>
-
-                        <button class='OptButton'>Edit Profile</button>
-
-                        <button class='OptButton' >Pay Premium</button>
-                    
-                    </div>
-
-
                     <div class='UserOptions'>
 
                         <img src='${WHITEICONS}share.png'/>
@@ -40,6 +31,14 @@ export const MYACCOUNTPAGE=()=>{
                         <img class='Logout' src='${WHITEICONS}logout.png'/>
                     
                     </div>
+                
+                </div>
+
+                <div class='OptinHolder'>
+
+                    <button class='OptButton'>Edit Profile</button>
+
+                    <button class='OptButton' >Pay Premium</button>
                 
                 </div>
                 

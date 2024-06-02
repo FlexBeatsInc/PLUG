@@ -30,7 +30,7 @@ NETWORKSTATE((data)=>{
               console.log('Service worker registration failed:', error);
             });
         });
-      }
+    }
 
 });
 

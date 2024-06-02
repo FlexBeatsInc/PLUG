@@ -75,6 +75,8 @@
     .OptinHolder{
         position: relative;
         display: inline-flex;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
     
     .OptButton{
