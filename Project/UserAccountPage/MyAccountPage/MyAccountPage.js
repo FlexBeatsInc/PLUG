@@ -22,6 +22,15 @@ export const MYACCOUNTPAGE=()=>{
 
                     <p class='Verify'><p>
 
+                    <div class='OptinHolder'>
+
+                        <button class='OptButton'>Edit Profile</button>
+
+                        <button class='OptButton' >Pay Premium</button>
+                    
+                    </div>
+
+
                     <div class='UserOptions'>
 
                         <img src='${WHITEICONS}share.png'/>

@@ -1,5 +1,7 @@
+import { HOMEDAWS } from "../HomeDaws/HomeDaws.js";
 import { HOMEPAGE } from "../HomePage/HomePage.js";
 import { HOMEPLUGINS } from "../HomePlugins/HomePlugins.js";
+import { HOMESAMPLES } from "../HomeSamples/HomeSamples.js";
 
 export const HOMESIDEPDIVPAGE=()=>{
 
@@ -39,7 +41,7 @@ export const HOMESIDEPDIVPAGE=()=>{
             
             </button>
 
-            <button class='Button'>
+            <button  id='Samples' class='Button'>
 
                 <h1 class='Btntitles'>Samples</h1>
 
@@ -47,7 +49,7 @@ export const HOMESIDEPDIVPAGE=()=>{
             
             </button>
 
-            <button class='Button'>
+            <button id='Daws' class='Button'>
 
                 <h1 class='Btntitles'>Daws</h1>
 
@@ -91,6 +93,14 @@ export const HOMESIDEPDIVPAGE=()=>{
         CLICKED('#Home',()=>{
             HOMEPAGE();
         });
+
+        CLICKED('#Daws',()=>{
+            HOMEDAWS();
+        })
+
+        CLICKED('#Samples',()=>{
+            HOMESAMPLES();
+        })
 
     })
 
