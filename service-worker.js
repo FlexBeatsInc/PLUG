@@ -102,3 +102,24 @@ function showInstallPromotion() {
   // Add the install button to the page
   document.body.appendChild(installButton);
 }
+
+// Push notification event listener
+self.addEventListener('push', function(event) {
+  const options = {
+    body: event.data.text(),
+    icon: '/Components/Library/Images/app_icon.png',
+    badge: '/Components/Library/Images/app_icon.png',
+    // You can add more options here as needed
+  };
+
+  event.waitUntil(
+    self.registration.showNotification('Push Notification Title', options)
+  );
+});
+
+// Notification click event listener
+self.addEventListener('notificationclick', function(event) {
+  event.notification.close();
+  // Add your custom handling logic here, for example, opening a new window
+  clients.openWindow('https://flexbeatsinc.github.io/PLUG/App/index.html');
+});
